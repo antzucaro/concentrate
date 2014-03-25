@@ -45,6 +45,9 @@
         .birds-play-button { background: url('img/bird.png'); }
         .birds-play-button.active { background: url('img/bird-active.png'); }
 
+        .fire-play-button { background: url('img/fire.png'); }
+        .fire-play-button.active { background: url('img/fire-active.png'); }
+
         .play-container {
             margin: 0 auto;
             width: 170px;
@@ -139,10 +142,25 @@
 
                 <div class="volume-bar" style="display:none;"></div>
             </div>
+        </div>
+
+        <div class="small-4 columns">
+            <div id="fire" class="play-container">
+                <div class="fire-play-button play-button">
+                </div>
+
+                <audio class="player-audio" style="display:none" src="audio/fire.mp3" controls loop>
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+
     </div>
 
     <script>
-    var blocks = ["thunderstorm", "rain", "forest", "birds"];
+    var blocks = ["thunderstorm", "rain", "forest", "birds", "fire"];
 
     blocks.forEach(function(b){
         var block = $("#" + b);
