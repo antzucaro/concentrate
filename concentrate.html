@@ -48,6 +48,9 @@
         .fire-play-button { background: url('img/fire.png'); }
         .fire-play-button.active { background: url('img/fire-active.png'); }
 
+        .ocean-play-button { background: url('img/waves.png'); }
+        .ocean-play-button.active { background: url('img/waves-active.png'); }
+
         .play-container {
             margin: 0 auto;
             width: 170px;
@@ -157,10 +160,23 @@
             </div>
         </div>
 
+        <div class="small-4 columns">
+            <div id="ocean" class="play-container">
+                <div class="ocean-play-button play-button">
+                </div>
+
+                <audio class="player-audio" style="display:none" src="audio/beach.mp3" controls loop>
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+
     </div>
 
     <script>
-    var blocks = ["thunderstorm", "rain", "forest", "birds", "fire"];
+    var blocks = ["thunderstorm", "rain", "forest", "birds", "fire", "ocean"];
 
     blocks.forEach(function(b){
         var block = $("#" + b);
