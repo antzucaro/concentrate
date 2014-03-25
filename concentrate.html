@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Concentrate by Ant Zucaro</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/foundation.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+
+        <style>
+        body {
+            background: #680001;
+            color: rgb(206, 87, 0);
+            font-family: 'Open Sans Condensed', sans-serif;
+            margin-top: 20px;
+        }
+
+        p {
+            clear: left;
+            color: rgb(206, 87, 0);
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            color: rgb(206, 87, 0);
+            font-family: 'Open Sans Condensed', sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgb(51, 51, 51);
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 35px;
+        }
+
+        .rain-play-button { background: url('img/rain.png'); }
+        .rain-play-button.active { background: url('img/rain-active.png'); }
+
+        .thunderstorm-play-button { background: url('img/thunderstorm.png'); }
+        .thunderstorm-play-button.active { background: url('img/thunderstorm-active.png'); }
+
+        .forest-play-button { background: url('img/tree.png'); }
+        .forest-play-button.active { background: url('img/tree-active.png'); }
+
+        .play-container {
+            margin: 0 auto;
+            width: 170px;
+        }
+
+        .play-button {
+            float: left;
+            height: 150px;
+            margin: 0 auto;
+            width: 150px;
+        }
+
+        .volume-bar {
+            float: right;
+            font-size: 5px;
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+
+        .ui-slider-vertical .ui-slider-handle {
+            left: -1em;
+        }
+
+        .ui-slider .ui-slider-handle {
+            height: 2.2em;
+            width: 2.2em;
+        }
+
+        </style>
+
+        <!-- Scripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/foundation.min.js"></script>
+    </head>
+<body>
+    <div class="row">
+        <div class="small-12 columns">
+            <h1 class="title">CONCENTRATE!</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-4 columns">
+            <div id="thunderstorm" class="play-container">
+                <div class="thunderstorm-play-button play-button"></div>
+
+                <audio style="display:none" src="audio/thunderstorm.mp3" controls loop>
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+
+        <div class="small-4 columns">
+            <div id="rain" class="play-container">
+                <div class="rain-play-button play-button">
+                </div>
+
+                <audio class="player-audio" style="display:none" src="audio/rain.mp3" controls loop>
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+
+        <div class="small-4 columns">
+            <div id="forest" class="play-container">
+                <div class="forest-play-button play-button">
+                </div>
+
+                <audio class="player-audio" style="display:none" src="audio/forest.mp3" controls loop>
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    var blocks = ["thunderstorm", "rain", "forest"];
+
+    blocks.forEach(function(b){
+        var block = $("#" + b);
+        var image = block.find(".play-button");
+        var player = block.find("audio");
+        var volume = block.find(".volume-bar");
+
+        // set initial volume to 75
+       player[0].volume = .75;
+
+        // click the images to start the audio
+        image.click(setPlayHandler(player[0], image, volume[0]));
+
+        // use a slider widget
+        volume.slider({
+            orientation: "vertical",
+            value: 75,
+            slide: function(e, ui) {
+                player[0].volume = ui.value/100;
+            }
+        });
+    })
+
+    // play/pause when you click the images
+    function setPlayHandler(p, i, v) {
+        return function() { 
+            if (p.paused) {
+                p.play();
+                v.style.display = "";
+                i.addClass("active");
+            } else {
+                p.pause();
+                v.style.display = "none";
+                i.removeClass("active");
+            }
+        }
+    };
+
+    </script>
+</body>
+</html>
