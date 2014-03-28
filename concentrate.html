@@ -56,6 +56,9 @@
         .ocean-play-button { background: url('img/waves.png'); }
         .ocean-play-button.active { background: url('img/waves-active.png'); }
 
+        .owls-play-button { background: url('img/owl.png'); }
+        .owls-play-button.active { background: url('img/owl-active.png'); }
+
         .play-container {
             margin: 0 auto;
             width: 170px;
@@ -192,8 +195,29 @@
 
     </div>
 
+    <div class="row player-button-row">
+        <div class="small-4 columns">
+            <div id="owls" class="play-container">
+                <div class="owls-play-button play-button">
+                </div>
+
+                <audio class="player-audio" style="display:none" controls loop>
+                    <source src="audio/owls.ogg" type="audio/ogg">
+                    <source src="audio/owls.mp3" type="audio/mpeg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+
     <script>
-    var blocks = ["thunderstorm", "rain", "forest", "birds", "fire", "ocean"];
+    var blocks = [
+        "thunderstorm", "rain", "forest", 
+        "birds", "fire", "ocean",
+        "owls"
+    ];
 
     blocks.forEach(function(b){
         var block = $("#" + b);
