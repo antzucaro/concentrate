@@ -62,6 +62,9 @@
         .frogs-play-button { background: url('img/frog.png'); }
         .frogs-play-button.active { background: url('img/frog-active.png'); }
 
+        .crickets-play-button { background: url('img/cricket.png'); }
+        .crickets-play-button.active { background: url('img/cricket-active.png'); }
+
         .play-container {
             margin: 0 auto;
             width: 170px;
@@ -229,13 +232,28 @@
             </div>
         </div>
 
+        <div class="small-4 columns">
+            <div id="crickets" class="play-container">
+                <div class="crickets-play-button play-button">
+                </div>
+
+                <audio class="player-audio" style="display:none" controls loop>
+                    <source src="audio/crickets.ogg" type="audio/ogg">
+                    <source src="audio/crickets.mp3" type="audio/mpeg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <div class="volume-bar" style="display:none;"></div>
+            </div>
+        </div>
+
     </div>
 
     <script>
     var blocks = [
-        "thunderstorm", "rain", "forest", 
-        "birds", "fire", "ocean",
-        "owls", "frogs"
+        "thunderstorm", "rain",  "forest",
+        "birds",        "fire",  "ocean",
+        "owls",         "frogs", "crickets"
     ];
 
     blocks.forEach(function(b){
