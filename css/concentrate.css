@@ -7,8 +7,11 @@ body {
 
 p {
     clear: left;
-    color: rgb(206, 87, 0);
-    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(240, 240, 240);
+    font-family: 'Bangers', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px rgb(41, 35, 23);
 }
 
 h1, h2, h3, h4 {
@@ -22,6 +25,11 @@ h1 {
     letter-spacing: 3px;
     margin-bottom: 35px;
     text-shadow: 2px 2px 1px rgb(41, 35, 23);
+}
+
+#footer {
+    margin-top: 30px;
+    text-align: center;
 }
 
 .play-container {
