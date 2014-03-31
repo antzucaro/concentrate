@@ -1,0 +1,59 @@
+Non-vendor code copyright 2014 Ant Zucaro. Released under the GNU General Public License version 3 or later.
+
+All of the sound samples and images fall under the licenses specified below.
+
+Public Domain (PD)
+Creative Commons Zero (CC0) - See http://creativecommons.org/publicdomain/zero/1.0/ for details.
+Creative Commons Attribution (CC-BY) - See http://creativecommons.org/licenses/by/3.0/ for details.
+Creative Commons Noncommercial (CC-BY-NC) - See http://creativecommons.org/licenses/by-nc/3.0/ for details.
+
+Sounds via Freesound.org
+========================
+
+By c97059890 (http://www.freesound.org/people/c97059890/):
+    - Beach: http://www.freesound.org/people/c97059890/sounds/36430/ (CC0)
+
+By acclivity (http://www.freesound.org/people/acclivity/):
+    - Woodland Birds: http://www.freesound.org/people/acclivity/sounds/150415/ (CC-BY-NC)
+
+By sean.townsend (http://www.freesound.org/people/sean.townsend/)
+    - Rain: http://www.freesound.org/people/sean.townsend/sounds/140294/ (CC-BY)
+
+By juskiddink (http://www.freesound.org/people/juskiddink/)
+    - Aspen tree in strong wind: http://www.freesound.org/people/juskiddink/sounds/78955/ (CC-BY)
+
+By urupin (http://www.freesound.org/people/urupin/)
+    - Fire crackling: http://www.freesound.org/people/urupin/sounds/178813/ (CC0)
+
+By Benboncan (https://www.freesound.org/people/Benboncan/)
+    - Tawny Owls: https://www.freesound.org/people/Benboncan/sounds/64544/ (CC-BY)
+
+By greysound (https://www.freesound.org/people/greysound/)
+    - Frogs: https://www.freesound.org/people/greysound/sounds/32655/ (CC0)
+
+By rhapsodize (http://www.freesound.org/people/rhapsodize/)
+    - Crickets: http://www.freesound.org/people/rhapsodize/sounds/171823/ (CC-BY)
+
+By matucha (http://www.freesound.org/people/matucha/)
+    - Thunderclaps: http://www.freesound.org/people/matucha/sounds/158174/ (CC-BY)
+
+Icons via The Noun Project (thenounproject.com)
+===============================================
+
+Bird by Agne Alesiute from The Noun Project (CC-BY)
+
+Grasshopper by OCHA Visual Information Unit from The Noun Project (PD)
+
+Fire by Lil Squid from The Noun Project (CC-BY)
+
+Frog by Ealancheliyan s from The Noun Project (CC-BY)
+
+Owl by Rudy Jaspers from The Noun Project (CC-BY)
+
+Rain by Dmitry Baranovskiy from The Noun Project (CC-BY)
+
+Thunderstorm by Dmitry Baranovskiy from The Noun Project (CC-BY)
+
+Tree by Zahi Asa from The Noun Project (CC-BY)
+
+Water by Chris Evans from The Noun Project (CC-BY)
