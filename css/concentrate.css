@@ -24,10 +24,6 @@ h1 {
     text-shadow: 2px 2px 1px rgb(41, 35, 23);
 }
 
-.player-button-row {
-    margin-bottom: 40px;
-}
-
 .play-container {
     margin: 0 auto;
     width: 130px;
@@ -38,7 +34,7 @@ h1 {
     cursor: pointer;
     float: left;
     height: 110px;
-    margin: 0 auto;
+    margin-bottom: 40px;
     -webkit-transition: color 0.25s ease-in-out;
     -moz-transition: color 0.25s ease-in-out;
     -o-transition: color 0.25s ease-in-out;
